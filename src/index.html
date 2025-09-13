@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Landing Page</title>
+  </head>
+  <body class="bg-[#fcfbf7]">
+    <!-- Navbar -->
+    <nav class="w-full fixed top-0 z-10">
+      <div
+        class="flex max-w-7xl py-4 mx-auto px-3 items-center justify-between"
+      >
+        <div>
+          <img src="/src/images/logo.svg" alt="logo" class="h-8" />
+        </div>
+
+        <div>
+          <button id="menuOpen" class="cursor-pointer md:hidden">
+            <!-- menu icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+          </button>
+          <div class="hidden font-semibold md:block text-white">
+            <ul class="flex items-center space-x-8">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Get Plan</a></li>
+              <li><a href="#">Blog</a></li>
+              <li>
+                <button
+                  class="cursor-pointer text-black bg-white rounded-md py-2 px-3"
+                >
+                  Make Store
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main>
+      <section
+        class="bg-cover bg-center h-min pt-[50px]  relative flex flex-col justify-center items-center"
+        style="background-image: url('/src/images/banner.png')"
+      >
+        <div class="sm:py-[100px] py-[80px] ">
+          <div class="text-center lg:max-w-3xl xl:max-w-4xl mx-auto">
+            <div class="">
+              <h4
+                class="lg:text-xl font-semibold sm:text-base text-sm text-gray-300"
+              >
+                Intelligent Marketing Automation
+              </h4>
+              <h2
+                class="text-2xl font-bold lg:my-8 my-2 lg:text-[80px] text-white sm:text-3xl"
+              >
+                Easily Connect With Your Audience
+              </h2>
+              <p
+                class="lg:text-[22px] mb-2 lg:mb-8 sm:text-base text-sm text-gray-300"
+              >
+                Email marketing automation. create best and easy business growth
+                with sassly.
+              </p>
+            </div>
+            <div
+              class="border max-w-2xl mx-auto flex justify-between mt-4 p-2 backdrop-blur-2xl border-white rounded-md bg-white/10"
+            >
+              <input
+                class="text-white px-4 bg-transparent flex-1 sm:text-base text-sm placeholder-white lg:text-lg outline-0"
+                type="email"
+                placeholder="Type Your Email"
+              />
+              <button
+                class="bg-white text-xs sm:text-sm lg:text-base font-semibold rounded-md lg:py-3 lg:px-5 px-3 py-2 text-black"
+              >
+                Try for free
+              </button>
+            </div>
+            <div
+              class="lg:text-lg flex items-center justify-center gap-2 mt-4 sm:text-base text-sm text-gray-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-check-icon lucide-check"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              <p>No credit card required</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video -->
+        <div
+          class="bg-gray-200 mb-10  sm:h-[90vh] h-[30vh] sm:-mb-[280px] z-10 border-white w-[85%] rounded-2xl mx-auto lg:w-5xl"
+        >
+          video
+        </div>
+      </section>
+
+      <!-- <div class=" ">
+          <div class="text-center flex flex-col justify-center items-center mx-auto max-w-[750px]">
+            <h4
+              class="lg:text-xl font-semibold sm:text-base text-sm text-gray-300"
+            >
+              Intelligent Marketing Automation
+            </h4>
+            <h2
+              class="text-2xl font-bold max-w-[800px] lg:my-8 my-2 lg:text-7xl text-white sm:text-3xl"
+            >
+              Easily Connect With Your Audience
+            </h2>
+            <p
+              class="lg:text-lg mb-2 lg:mb-8 sm:text-base text-sm text-gray-300"
+            >
+              Email marketing automation. create best and easy business growth
+              with sassly.
+            </p>
+            <div
+              class="border flex justify-between p-2 backdrop-blur-2xl border-white rounded-md bg-white/10"
+            >
+              <input
+                class="text-white px-4 bg-transparent lg:w-xl w-54 sm:text-base text-sm placeholder-white lg:text-lg outline-0"
+                type="email"
+                placeholder="Type Your Email"
+              />
+              <button
+                class="bg-white text-xs sm:text-sm lg:text-base font-semibold rounded-md lg:py-3 lg:px-5 px-3 py-2 text-black"
+              >
+                Try for free
+              </button>
+            </div>
+            <div
+              class="lg:text-lg flex items-center justify-center  gap-2 mt-2 lg:mb-8 sm:text-base text-sm text-gray-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-check-icon lucide-check"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              <p>No credit card required</p>
+            </div>
+          </div>
+          <div
+          class="max-w-7xl h-[300px] lg:h-[500px] sm:h-[400px] mx-auto flex items-center justify-center rounded-3xl text-3xl bg-white shadow-lg p-10"
+        >
+          video
+        </div>
+        </div> -->
+
+      <section class="bg-[#fcfbf7] pt-80">
+        <div class="px-3 mx-auto py-8 lg:py-16 max-w-7xl">
+          <div class="flex flex-col items-center gap-4 md:flex-row">
+            <div class="md:w-1/2 w-full">
+              <h2
+                class="lg:text-5xl w-[80%] text-gray-800 font-bold sm:text-2xl text-xl"
+              >
+                Let our marketing magic elevate your brand
+              </h2>
+              <p
+                class="lg:text-lg sm:text-base mt-4 w-[90%] text-sm text-gray-500"
+              >
+                Explore our diverse industry solutions, meticulously crafted to
+                meet unique demand. helps you be more.
+              </p>
+            </div>
+            <div class="md:w-1/2 gap-4 flex w-full">
+              <div>
+                <img class="w-full" src="/src/images/s2.png" alt="" />
+              </div>
+              <div>
+                <img class="w-full" src="/src/images/s2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#fcfbf7] pb-16">
+        <div class="text-center flex flex-col items-center justify-center py-8">
+          <h2
+            class="lg:text-5xl max-w-[600px] text-gray-800 font-bold sm:text-2xl text-xl"
+          >
+            TheAI makes your business support easier.
+          </h2>
+          <p class="lg:text-lg sm:text-base mt-4 text-sm text-gray-500">
+            Deliver happiness to your customers and get them to adore you! Desk
+            helps you be more accessible
+          </p>
+        </div>
+        <div
+          class="flex max-w-7xl border-t border-gray-300 px-3 justify-between mx-auto flex-col md:flex-row"
+        >
+          <div
+            class="text-center w-full border-gray-300 md:border-r py-4 sm:py-8 lg:py-16"
+          >
+            <h2
+              class="lg:text-6xl text-gray-800 md:text-4xl text-3xl font-bold"
+            >
+              20M
+            </h2>
+            <p class="lg:text-lg sm:text-base lg:mt-2 text-sm text-gray-500">
+              Emails per month and websites
+            </p>
+          </div>
+          <div
+            class="text-center w-full border-gray-300 md:border-r py-4 sm:py-8 lg:py-16"
+          >
+            <h2
+              class="lg:text-6xl text-gray-800 md:text-4xl text-3xl font-bold"
+            >
+              95%
+            </h2>
+            <p class="lg:text-lg sm:text-base mt-2 text-sm text-gray-500">
+              Client support and satisfaction
+            </p>
+          </div>
+          <div class="text-center w-full py-4 sm:py-8 lg:py-16">
+            <h2
+              class="lg:text-6xl md:text-4xl text-gray-800 text-3xl font-bold"
+            >
+              5k+
+            </h2>
+            <p class="lg:text-lg sm:text-base mt-2 text-sm text-gray-500">
+              Monthly campaign with orders
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#edf4f3]">
+        <div
+          class="flex flex-col items-center mx-auto max-w-7xl py-12 lg:gap-16 gap-8 px-3 sm:flex-row"
+        >
+          <div class="grid sm:w-1/2 gap-4 grid-cols-5">
+            <div class="col-span-2 row-span-2">
+              <img src="/src/images/g1.png" class="w-full h-full" alt="" />
+            </div>
+            <div class="col-span-3 row-span-1">
+              <img src="/src/images/g2.png" class="w-full h-full" alt="" />
+            </div>
+            <div class="col-span-3 row-span-1">
+              <img src="/src/images/g3.png" class="w-full h-full" alt="" />
+            </div>
+          </div>
+          <div class="sm:w-1/2">
+            <p class="lg:text-lg sm:text-base text-sm text-gray-800">
+              Over <span class="text-[#6965e1]">78,470+</span> global
+              <span class="text-[#6965e1]">clients</span>
+            </p>
+            <h2
+              class="lg:text-5xl text-gray-800 font-bold py-2 sm:text-2xl text-xl"
+            >
+              Simple getaway system and data protection
+            </h2>
+            <p class="lg:text-lg sm:text-base mt-4 text-sm text-gray-500">
+              Ability to understand and generate content in different to expand
+              to any marketing channel.
+            </p>
+            <div class="flex gap-4 flex-col sm:flex-row">
+              <div class="w-full sm:py-8">
+                <h2
+                  class="lg:text-4xl text-gray-800 md:text-3xl text-2xl font-bold"
+                >
+                  + 78 %
+                </h2>
+                <p class="lg:text-lg sm:text-base mt-2 text-sm text-gray-500">
+                  Plan and create content audience.
+                </p>
+              </div>
+              <div class="w-full sm:py-8">
+                <h2
+                  class="lg:text-4xl text-gray-800 md:text-3xl text-2xl font-bold"
+                >
+                  + 95 %
+                </h2>
+                <p class="lg:text-lg sm:text-base mt-2 text-sm text-gray-500">
+                  Track your performance single platform
+                </p>
+              </div>
+            </div>
+            <button
+              class="bg-[#6965e1] mt-4 cursor-pointer rounded-md text-white text-sm font-bold py-4 px-8"
+            >
+              Get Start
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#fcfbf7]">
+        <div
+          class="max-w-7xl py-8 gap-8 md:flex-row items-center flex flex-col lg:py-16 px-3 mx-auto"
+        >
+          <div class="md:w-1/2 w-full">
+            <div class="md:w-[80%]">
+              <h2
+                class="lg:text-5xl text-gray-800 font-bold sm:text-2xl text-xl"
+              >
+                TheAI makes your business support easier.
+              </h2>
+              <div class="mt-6">
+                <div class="border-b">
+                  <button
+                    class="w-full flex justify-between items-center py-4 text-left focus:outline-none faq-toggle"
+                  >
+                    <span class="font-medium text-base"
+                      >What is Tailwind CSS?</span
+                    >
+                    <svg
+                      class="w-5 h-5 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                  <div class="faq-content hidden pb-4 text-gray-600">
+                    Tailwind CSS is a utility-first CSS framework for building
+                    modern, responsive designs quickly.
+                  </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border-b">
+                  <button
+                    class="w-full flex justify-between items-center py-4 text-left focus:outline-none faq-toggle"
+                  >
+                    <span class="font-medium text-base"
+                      >How does the FAQ toggle work?</span
+                    >
+                    <svg
+                      class="w-5 h-5 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                  <div class="faq-content hidden pb-4 text-gray-600">
+                    A small JavaScript function adds and removes classes to show
+                    or hide the answer.
+                  </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border-b">
+                  <button
+                    class="w-full flex justify-between items-center py-4 text-left focus:outline-none faq-toggle"
+                  >
+                    <span class="font-medium text-base"
+                      >Can I customize Tailwind?</span
+                    >
+                    <svg
+                      class="w-5 h-5 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                  <div class="faq-content hidden pb-4 text-gray-600">
+                    Yes! Tailwind is fully customizable through its
+                    configuration file.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <img class="w-full" src="/src/images/f.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#fcfbf7]">
+        <div
+          class="py-8 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto px-3 lg:py-16"
+        >
+          <div
+            class="bg-[#e0eafa] bg-center bg-cover rounded-2xl"
+            style="background-image: url('/src/images/t.png')"
+          >
+            <div class="p-4 md:p-6">
+              <div class="flex justify-between">
+                <img class="w-20" src="/src/images/google.png" alt="" />
+                <div class="flex gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p class="lg:text-lg sm:text-base my-6 text-sm text-gray-500">
+                TheAI on awesome website in the past allowing you to focus your
+                not pretty simple website...
+              </p>
+
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                  <img src="/src/images/user1.png" alt="" />
+                  <div>
+                    <h2 class="text-base font-semibold sm:text-lg">
+                      Saia Oliv
+                    </h2>
+                    <p class="text-gray-500 text-xs">Chief Operating Offcer</p>
+                  </div>
+                </div>
+                <img src="/src/images/qute.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-[#ecebfd] bg-center bg-cover rounded-2xl"
+            style="background-image: url('/src/images/t3.png')"
+          >
+            <div class="p-4 md:p-6">
+              <div class="flex justify-between">
+                <img class="w-20" src="/src/images/google.png" alt="" />
+                <div class="flex gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p class="lg:text-lg sm:text-base my-6 text-sm text-gray-500">
+                TheAI on awesome website in the past allowing you to focus your
+                not pretty simple website...
+              </p>
+
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                  <img src="/src/images/user3.png" alt="" />
+                  <div>
+                    <h2 class="text-base font-semibold sm:text-lg">
+                      Saia Oliv
+                    </h2>
+                    <p class="text-gray-500 text-xs">Chief Operating Offcer</p>
+                  </div>
+                </div>
+                <img src="/src/images/qute.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-[#edf4f3] bg-center bg-cover rounded-2xl"
+            style="background-image: url('/src/images/t2.png')"
+          >
+            <div class="p-4 md:p-6">
+              <div class="flex justify-between">
+                <img class="w-20" src="/src/images/google.png" alt="" />
+                <div class="flex gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star-icon lucide-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p class="lg:text-lg sm:text-base my-6 text-sm text-gray-500">
+                TheAI on awesome website in the past allowing you to focus your
+                not pretty simple website...
+              </p>
+
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                  <img src="/src/images/user2.png" alt="" />
+                  <div>
+                    <h2 class="text-base font-semibold sm:text-lg">
+                      Saia Oliv
+                    </h2>
+                    <p class="text-gray-500 text-xs">Chief Operating Offcer</p>
+                  </div>
+                </div>
+                <img src="/src/images/qute.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#edf4f3]">
+        <div
+          class="flex flex-col items-center mx-auto max-w-7xl py-12 lg:gap-16 gap-8 px-3 sm:flex-row"
+        >
+          <div class="grid sm:w-1/2 gap-4 grid-cols-5">
+            <div class="col-span-2 row-span-2">
+              <img src="/src/images/w1.png" class="w-full h-full" alt="" />
+            </div>
+            <div class="col-span-3 row-span-1">
+              <img src="/src/images/w2.png" class="w-full h-full" alt="" />
+            </div>
+            <div class="col-span-3 row-span-1">
+              <img src="/src/images/g3.png" class="w-full h-full" alt="" />
+            </div>
+          </div>
+          <div class="sm:w-1/2">
+            <h2 class="lg:text-5xl text-gray-800 font-bold sm:text-2xl text-xl">
+              Why should you choose TheAI automation.
+            </h2>
+            <p class="lg:text-lg sm:text-base mt-4 text-sm text-gray-500">
+              Start with a pre-designed template to create a Facebook ad that’s
+              visually appealing and engaging. Select a professionally designed.
+            </p>
+            <div class="mt-8 space-y-3">
+              <div class="flex gap-2">
+                <div
+                  class="border bg-orange-100 flex items-center justify-center rounded-full h-16 w-16"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-notebook-pen-icon lucide-notebook-pen"
+                  >
+                    <path
+                      d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"
+                    />
+                    <path d="M2 6h4" />
+                    <path d="M2 10h4" />
+                    <path d="M2 14h4" />
+                    <path d="M2 18h4" />
+                    <path
+                      d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h2 class="lg:text-lg sm:text-base font-bold">
+                    Data analytics
+                  </h2>
+                  <p class="lg:text-lg sm:text-base mt-1 text-sm text-gray-500">
+                    Analytics refers to the systematic collection
+                    interpretation.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div
+                  class="border bg-orange-100 flex items-center justify-center rounded-full h-16 w-16"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-target-icon lucide-target"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <circle cx="12" cy="12" r="6" />
+                    <circle cx="12" cy="12" r="2" />
+                  </svg>
+                </div>
+                <div>
+                  <h2 class="lg:text-lg sm:text-base font-bold">
+                    Event marketing
+                  </h2>
+                  <p class="lg:text-lg sm:text-base mt-1 text-sm text-gray-500">
+                    An SEO audit is comprehensive’s analysis of a website.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div
+                  class="border bg-orange-100 flex items-center justify-center rounded-full h-16 w-16"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chart-no-axes-combined-icon lucide-chart-no-axes-combined"
+                  >
+                    <path d="M12 16v5" />
+                    <path d="M16 14v7" />
+                    <path d="M20 10v11" />
+                    <path
+                      d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"
+                    />
+                    <path d="M4 18v3" />
+                    <path d="M8 14v7" />
+                  </svg>
+                </div>
+                <div>
+                  <h2 class="lg:text-lg sm:text-base font-bold">
+                    Brand strategy
+                  </h2>
+                  <p class="lg:text-lg sm:text-base mt-1 text-sm text-gray-500">
+                    An SEO audit is comprehensive’s analysis of a website.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#fcfbf7] py-8 lg:py-16">
+        <div class="max-w-[600px] text-center mx-auto">
+          <h2 class="lg:text-5xl text-gray-800 font-bold sm:text-2xl text-xl">Great plan!</h2>
+          <h2 class="lg:text-5xl text-gray-800 font-bold sm:text-2xl text-xl">Choose your best</h2>
+          <p class="lg:text-lg sm:text-base mt-3 text-sm text-gray-500">Optimize your impact this holiday season with an AI-driven, multichannel marketing strategy. Get all the tips and tricks in our free ebook.</p>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      document.querySelectorAll(".faq-toggle").forEach((button) => {
+        button.addEventListener("click", () => {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector("svg");
+
+          content.classList.toggle("hidden");
+          icon.classList.toggle("rotate-180");
+        });
+      });
+    </script>
+  </body>
+</html>
